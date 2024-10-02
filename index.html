@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dmastermind Propfirm Evaluation Trading Survey Form</title>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Dmastermind propfirm Passing survey Form</h1>
+  <p id="description" class="description text-center">Thank you for your honest feedback</p>
+    </header>
+    <!--Form starts here-->
+    <form id="survey-form">
+      <!--Name lable and input starts here-->
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+      </div>
+      <!--Name lable and input ends here-->
+      <!--Email lable and input starts here-->
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+        />
+        <!--Email lable and input Ends here-->
+        </div>
+        <!--Age lable and input starts here: TODO: change back to account size select option before pushing to git hub-->
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+          type="number"
+          name="age"
+          id="number"
+          min="15"
+          max="100"
+          class="form-control"
+          placeholder="Age"
+          required
+          />
+        </div>
+        <!--Age div ends here-->
+        <!--Trading experience select drop down starts here-->
+        <div class="form-group">
+          <p>Which option best describles your trading experience?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Trading Experience</option>
+            <option value="student">Beginner</option>
+            <option value="job">Advanced</option>
+            <option value="learner">Expert</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+
+          </select>
+        </div>
+        <!--Trading experience select drop down ends here-->
+        <!--Recommendation radio button starts here-->
+        <div class="form-group">
+          <p>Would you recommend us to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+        <!--Recommendation radio button ends here-->
+        <!--Favorite feature starts here-->
+        <div class="form-group">
+          <p>What of our feature is your favorite</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">40/60 profit split</option>
+            <option value="projects">Trading signal</option>
+            <option value="community">Copy Trading</option>
+            <option value="openSource">Discounts</option>
+          </select>
+        </div>
+        <!--Favorite feature Ends here-->
+        <!--What should be improved div starts here-->
+        <div class="form-group">
+          <p>What would you like to see improved?<span class="clue"></span> (Check all that apply)</span></span></p>
+          <label>
+            <input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+            />Cost</label>
+            <label>
+              <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+              />Profit Split</label>
+             <label>
+               <input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+              />Accounting passing time</label>
+              <label>
+                <input
+               name="prefer"
+               value="challenges"
+               type="checkbox"
+               class="input-checkbox"
+               />Signal Services</label>
+
+               <label>
+                <input
+               name="prefer"
+               value="open-source-community"
+               type="checkbox"
+               class="input-checkbox"
+               />Educational Videos</label>
+        </div>
+         <!--What should be improved div Ends here-->
+         <!--Suggestion or comments starts here-->
+         <div class="form-group"></div>
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+          <!--Suggestion or comments Ends here-->
+          <!--Submit btn starts here-->
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+          <!--Submit btn starts here-->
+        </div>
+
+        
+    </form>
+    </div>
+  </body>
+</html>
+
